@@ -1,19 +1,11 @@
-package design_a_stack_with_increment_operation
+package leetcode
 
 type CustomStack struct {
 	Elements []int
 	TopIndex int
 }
 
-func min(a, b int) int {
-	if a <= b {
-		return a
-	}
-
-	return b
-}
-
-func Constructor(maxSize int) CustomStack {
+func ConstructorCustomStack(maxSize int) CustomStack {
 	return CustomStack{make([]int, maxSize), -1}
 }
 

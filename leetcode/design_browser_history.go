@@ -1,4 +1,4 @@
-package design_browser_history
+package leetcode
 
 type BrowserHistory struct {
 	History      []string
@@ -21,7 +21,7 @@ func min(a, b int) int {
 	return b
 }
 
-func Constructor(homepage string) BrowserHistory {
+func ConstructorBrowserHistory(homepage string) BrowserHistory {
 	return BrowserHistory{[]string{homepage}, 0}
 }
 

@@ -1,4 +1,4 @@
-package linked_list
+package data_structures
 
 type Node[T any] struct {
 	Value T

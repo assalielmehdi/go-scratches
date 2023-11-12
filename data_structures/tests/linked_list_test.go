@@ -1,12 +1,12 @@
-package linked_list_test
+package data_structures_tests
 
 import (
-	"scratchs/data_structures/linked_list"
+	ds "assalielmehdi/scratchs/data_structures"
 	"testing"
 )
 
 func TestShouldReturnNewList(t *testing.T) {
-	list := linked_list.NewList[int]()
+	list := ds.NewList[int]()
 
 	if list.Size != 0 {
 		t.Fatalf("Incorrect size. Wanted=0, Found=%v.", list.Size)
@@ -19,9 +19,9 @@ func TestShouldReturnNewList(t *testing.T) {
 
 func TestShouldAddFirstWhenEmptyList(t *testing.T) {
 	value := 1
-	list := linked_list.NewList[int]()
+	list := ds.NewList[int]()
 
-	list = linked_list.AddFirst(list, value)
+	list = ds.AddFirst(list, value)
 
 	if list.Size != 1 {
 		t.Fatalf("Incorrect size. Wanted=1, Found=%v.", list.Size)
@@ -38,10 +38,10 @@ func TestShouldAddFirstWhenEmptyList(t *testing.T) {
 
 func TestShouldAddFirstWhenNotEmptyList(t *testing.T) {
 	value := 1
-	list := linked_list.NewList[int]()
+	list := ds.NewList[int]()
 
-	list = linked_list.AddFirst(list, 0)
-	list = linked_list.AddFirst(list, value)
+	list = ds.AddFirst(list, 0)
+	list = ds.AddFirst(list, value)
 
 	if list.Size != 2 {
 		t.Fatalf("Incorrect size. Wanted=2, Found=%v.", list.Size)
