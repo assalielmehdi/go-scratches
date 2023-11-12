@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package calculator;
+
+option go_package = "assalielmehdi/scratchs/grpc/calculator/proto";
+
+message CalculatorRequest {
+  enum OperationType {
+    ADD = 0;
+    SUB = 1;
+    MUL = 2;
+    DIV = 3;
+    POW = 4;
+  }
+
+  OperationType type = 1;
+  float operator1 = 2;
+  float operator2 = 3;
+}
+
+message CalculatorResponse {
+  float result = 1;
+}
+
+service CalculatorService {
+  rpc Calculate(CalculatorRequest) returns (CalculatorResponse);
+}
