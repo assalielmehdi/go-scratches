@@ -1,7 +1,7 @@
 package main
 
 import (
-	pb "assalielmehdi/scratchs/grpc/calculator/proto"
+	pb "assalielmehdi/scratches/grpc/calculator/proto"
 	"context"
 	"log"
 )

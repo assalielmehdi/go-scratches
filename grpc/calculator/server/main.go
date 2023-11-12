@@ -6,7 +6,7 @@ import (
 
 	"google.golang.org/grpc"
 
-	pb "assalielmehdi/scratchs/grpc/calculator/proto"
+	pb "assalielmehdi/scratches/grpc/calculator/proto"
 )
 
 var addr string = "0.0.0.0:50051"

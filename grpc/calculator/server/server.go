@@ -1,6 +1,6 @@
 package main
 
-import pb "assalielmehdi/scratchs/grpc/calculator/proto"
+import pb "assalielmehdi/scratches/grpc/calculator/proto"
 
 type Server struct {
 	pb.CalculatorServiceServer

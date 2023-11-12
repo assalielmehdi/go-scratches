@@ -1,4 +1,4 @@
-module assalielmehdi/scratchs
+module assalielmehdi/scratches
 
 go 1.21
 

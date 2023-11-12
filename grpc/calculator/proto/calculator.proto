@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package calculator;
 
-option go_package = "assalielmehdi/scratchs/grpc/calculator/proto";
+option go_package = "assalielmehdi/scratches/grpc/calculator/proto";
 
 message CalculatorRequest {
   enum OperationType {

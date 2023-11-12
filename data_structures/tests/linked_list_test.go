@@ -1,7 +1,7 @@
 package data_structures_tests
 
 import (
-	ds "assalielmehdi/scratchs/data_structures"
+	ds "assalielmehdi/scratches/data_structures"
 	"testing"
 )
 

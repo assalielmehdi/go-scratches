@@ -4,7 +4,7 @@ import (
 	"context"
 	"log"
 
-	pb "assalielmehdi/scratchs/grpc/calculator/proto"
+	pb "assalielmehdi/scratches/grpc/calculator/proto"
 )
 
 func calculate(operator1, operator2 float32, operation pb.CalculatorRequest_OperationType) float32 {
